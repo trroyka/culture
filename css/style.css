@@ -1,0 +1,252 @@
+body{
+    font-family: "Roboto",sans-serif;
+    width: 100%;
+    background: #FFFFFF;
+}
+.title{    
+    font-family: Playfair Display;
+    font-style: normal;
+    height: 18px;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+    top: 60px;
+}
+.header{
+    text-align:center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link{
+    display: inline-block;
+    align-items: center;
+    color:#595959;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right:50px; 
+    margin-top:46px;
+    text-transform:uppercase;
+}
+.header-link:first-child{    
+    margin-left:135px;   
+}
+.header-link:last-child{    
+    margin-right:135px;   
+}
+.promo {
+    background: url(../img/Hotel-11.jpg) no-repeat 50% 50%;
+    width: 100%;
+    height:464px;
+    left: 0px;
+    top: 218px;   
+    margin-top: 40px;  
+}
+.promo-img{    
+    margin-left: 50%;
+    margin-top:46px;
+}
+.promo-title{
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top:32px;
+    color: #FFFFFF;  
+}
+.promo-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 50px;
+    margin-top: 139px;
+}
+.section-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 44px; 
+}
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+.card:not(:first-child){
+    background: #FFFFFF;
+    width: 370px;
+    height:326px;
+    margin-left: 29px;
+    text-decoration: none;
+}
+.card:first-child{
+    margin-left:137px;
+    background: #FFFFFF;
+    width: 370px;
+    height:326px;
+    text-decoration: none;
+}
+.card-image{
+    width: 370px;
+    height: 203px;
+    margin-bottom:-15px;
+}
+.card-title{
+    font-family: Playfair Display;
+    font-size: 23px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom:10px;
+}
+.ctitle{
+    color: #FF7931;
+}
+.card-info{
+    width: 370px;
+    height: 64px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+.abonement{
+    text-align:center;
+    width: 100%; 
+    height: 556px; 
+    background:#F7F7F7 url(../img/Ellipse.png) no-repeat 50% 50%;
+    margin-top:10px;
+}
+.ab{
+    margin-top: 33px;
+}
+.abonement-text{
+    width:370px;
+    height: 63px;
+    margin-left: 500px;
+    text-align:center;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 150%;
+}
+.abonement-title:not(:first-child){
+    font-family: Playfair Display;    
+    font-weight: 900;
+    height: 31px;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 24px;
+}
+.abonement-title:first-child{
+    margin-top:35px;
+}
+.button{
+    width: 170px;
+    height: 47px;
+    left: 635px;
+    background: #FF7931 url("../img/Arrow.svg") no-repeat 117px 10px;
+    margin-bottom:41px;
+}
+.button-text{
+    width: 80px;
+    height: 15px;
+    margin-top:15px;
+    margin-left:20px;
+    font-style: normal;
+    font-weight: bold;    
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer{
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    height: 295px;
+    left: 0px;
+    top: 1751px;
+    background: #575757;
+    margin-top: 50px;
+}
+.footer-title{    
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-top: 26px;
+}
+.footer-link{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right:50px; 
+    text-transform:uppercase;
+}
+.footer-link:first-child{    
+    margin-left:135px;   
+}
+.footer-link:last-child{    
+    margin-right:135px;   
+}
+.line{
+    align-items:center;
+    width: 1170px;
+    height: 0px;
+    margin-left: 135px;
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+.social-links{
+    margin-top:35px;
+    margin: 0 auto;
+}
+.social-link{ 
+    display: inline-flex;
+    align-items: center;
+    vertical-align: center;
+    width: 47px;
+    height: 47px;     
+    margin-left: 12px;
+    margin-top: 42px;
+}
+.inst{
+    background:#FFFFFF url(../img/icons_2.svg) no-repeat 50% 50%; 
+}
+.fb{
+    background:#FFFFFF url(../img/facebook_icon.svg) no-repeat 50% 50%; 
+}
+.twitter{
+    background:#FFFFFF url(../img/twitter_icon.svg) no-repeat 50% 50%; 
+}
