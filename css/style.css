@@ -18,40 +18,38 @@ body{
     text-align:center;
 }
 
-.container{
+.container {
+    width: 81.25%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav {
     display: flex;
     justify-content: space-between;
-}
-
-.header-link{
-    display: inline-block;
     align-items: center;
+}
+.header-link{
+    display: block;
     color:#595959;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    margin-right:50px; 
     margin-top:46px;
     text-transform:uppercase;
 }
-.header-link:first-child{    
-    margin-left:135px;   
-}
-.header-link:last-child{    
-    margin-right:135px;   
-}
+
 .promo {
     background: url(../img/Hotel-11.jpg) no-repeat 50% 50%;
     width: 100%;
-    height:464px;
-    left: 0px;
-    top: 218px;   
-    margin-top: 40px;  
+    padding: 48px 0 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
 }
 .promo-img{    
-    margin-left: 50%;
     margin-top:46px;
 }
 .promo-title{
@@ -72,7 +70,7 @@ body{
     text-align: center;
     color: #FFFFFF;
     padding-left: 50px;
-    margin-top: 139px;
+    margin-bottom: 46px;
 }
 .section-title{
     font-family: Roboto;
@@ -86,27 +84,20 @@ body{
     text-transform: uppercase;
     margin-top: 44px; 
 }
+
 .cards {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px; 
+    align-items: center;
 }
-.card:not(:first-child){
-    background: #FFFFFF;
-    width: 370px;
-    height:326px;
-    margin-left: 29px;
-    text-decoration: none;
-}
-.card:first-child{
-    margin-left:137px;
+.card{
     background: #FFFFFF;
     width: 370px;
     height:326px;
     text-decoration: none;
 }
+
 .card-image{
     width: 370px;
     height: 203px;
@@ -203,7 +194,7 @@ body{
     margin-top: 26px;
 }
 .footer-link{
-    display: inline-block;
+    display: block;
     color: #FFFFFF;
     text-decoration: none;
     font-style: normal;
@@ -213,12 +204,7 @@ body{
     margin-right:50px; 
     text-transform:uppercase;
 }
-.footer-link:first-child{    
-    margin-left:135px;   
-}
-.footer-link:last-child{    
-    margin-right:135px;   
-}
+
 .line{
     align-items:center;
     width: 1170px;
