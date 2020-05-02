@@ -164,6 +164,7 @@ body{
     left: 635px;
     background: #FF7931 url("../img/Arrow.svg") no-repeat 117px 10px;
     margin-bottom:41px;
+    border:none;
 }
 .button-text{
     width: 80px;
@@ -211,6 +212,9 @@ body{
     margin-right:50px; 
     text-transform:uppercase;
 }
+.footer-link:last-of-type{
+    margin-right: 0;
+}
 
 .line{
     align-items:center;
@@ -220,6 +224,7 @@ body{
     opacity: 0.4;
     border: 1px solid #FFFFFF;
 }
+
 .social-links{
     margin-top:35px;
     margin: 0 auto;
