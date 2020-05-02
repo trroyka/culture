@@ -1,9 +1,10 @@
-body{
-    font-family: "Roboto",sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     width: 100%;
     background: #FFFFFF;
 }
-.title{    
+
+.title {
     font-family: Playfair Display;
     font-style: normal;
     height: 18px;
@@ -13,9 +14,10 @@ body{
     letter-spacing: 1px;
     color: #000000;
 }
-.header{
-    text-align:center;
-    padding:60px 0 47px;
+
+.header {
+    text-align: center;
+    padding: 60px 0 47px;
 }
 
 .container {
@@ -23,21 +25,29 @@ body{
     max-width: 1170px;
     margin: 0 auto;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-link{
+
+.link {
     display: block;
-    color:#595959;
+    color: #595959;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    margin-top:46px;
-    text-transform:uppercase;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #FF7931;
+}
+.header-link{
+    margin-top: 46px;
 }
 
 .promo {
@@ -47,25 +57,28 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
-.promo-img{
+
+.promo-img {
     margin-top: 46px;
     margin-bottom: 32px;
 }
-.promo-title{
+
+.promo-title {
     font-size: 72px;
     line-height: 84px;
     text-align: center;
     font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #FFFFFF;  
+    color: #FFFFFF;
     margin-block-start: 0;
     margin-block-end: 139px;
 }
-.promo-text{
-    font-family: Roboto;
+
+.promo-text {
+    font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -75,8 +88,9 @@ body{
     margin-block-start: 0;
     margin-block-end: 48px;
 }
-.section-title{
-    font-family: Roboto;
+
+.section-title {
+    font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -85,113 +99,148 @@ body{
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 44px; 
+    margin-top: 44px;
 }
-.section-title.section-title_ab{
-    margin-top:0;
+
+.section-title.section-title_ab {
+    margin-top: 0;
 }
 
 .cards {
-    width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-}
-.card{
-    background: #FFFFFF;
-    width: 370px;
-    height:326px;
-    text-decoration: none;
+    flex-wrap: wrap;
+    vertical-align: middle;
 }
 
-.card-image{
-    width: 370px;
-    height: 203px;
-    margin-bottom:-15px;
+.card1 {
+    text-decoration: none;
+    flex-basis: 32%;
+    min-width: 300px;
+    overflow: hidden;
+    margin-bottom:10px;
 }
-.card-title{
-    font-family: Playfair Display;
+
+.card {
+    background: #FFFFFF;
+}
+
+.card1:hover {
+   color: #FF7931;
+}
+
+.card1:hover .card-title {
+    color: #FF7931;
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
     font-size: 23px;
     line-height: 31px;
     color: #000000;
-    margin-bottom:10px;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
-.ctitle{
-    color: #FF7931;
-}
-.card-info{
-    width: 370px;
-    height: 64px;
-    font-family: Roboto;
+
+.card-info {
+    font-family: 'Roboto', serif;
     font-size: 14px;
     line-height: 150%;
     color: #000000;
+    object-fit: cover;
 }
-.abonement{
-    text-align:center;
-    width: 100%; 
-    height: 556px; 
-    background:#F7F7F7 url(../img/Ellipse.png) no-repeat 50% 50%;
-    margin-top:10px;
+
+.abonement {
+    background: radial-gradient(circle, #ffffff 353px, #F7F7F7 353px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 0 36px 0;
+    margin-top: 20px;
 }
-.abonement-container{
+
+.abonement-container {
     padding-top: 28px;
 }
 
-.abonement-text{
-    width:100%;
-    height: 63px;
-    text-align:center;
-    font-family: Roboto;
+.abonement_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 25px 0;
+    list-style: none;
+    max-width: 370px;
+    text-align: center;
+}
+
+.abonement-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.abonement-text {
     font-size: 14px;
     line-height: 150%;
+    margin: 0;
+    padding-bottom: 21px;
+    font-weight: 400;
+    box-sizing: border-box;
 }
-.abonement-title:not(:first-child){
-    font-family: Playfair Display;    
-    font-weight: 900;
-    height: 31px;
-    font-size: 23px;
-    line-height: 31px;
+
+.abonement_part span {
     text-align: center;
-    margin-top: 24px;
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
-.abonement-title:first-child{
-    margin-top:35px;
-}
-.button{
+
+.button {
     width: 170px;
     height: 47px;
-    left: 635px;
-    background: #FF7931 url("../img/Arrow.svg") no-repeat 117px 10px;
-    margin-bottom:41px;
-    border:none;
-}
-.button-text{
-    width: 80px;
-    height: 15px;
-    margin-top:15px;
-    margin-left:20px;
-    font-style: normal;
-    font-weight: bold;    
+    margin: 0 auto;
+    background-color: #FF7931;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
-    line-height: 14px;
+    font-weight: bold;
     letter-spacing: 2px;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
+    border: none;
 }
 
-.footer{
-    text-align:center;
+.button__image {
+    vertical-align: middle;
+}
+
+.button:hover {
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    background-color: rgb(224, 129, 77);
+}
+
+.footer {
+    text-align: center;
     position: absolute;
     width: 100%;
-    height: 295px;
     left: 0px;
-    top: 1751px;
     background: #575757;
     margin-top: 50px;
 }
-.footer-title{    
+
+.footer-title {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
@@ -201,49 +250,119 @@ body{
     color: #FFFFFF;
     margin-top: 26px;
 }
-.footer-link{
-    display: block;
+
+.footer-link {
     color: #FFFFFF;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    margin-right:50px; 
-    text-transform:uppercase;
-}
-.footer-link:last-of-type{
-    margin-right: 0;
+    margin-top: 32px;
 }
 
-.line{
-    align-items:center;
+.line {
+    align-items: center;
     width: 100%;
+    max-width: 1170px;
     height: 0px;
     margin-top: 46px;
     opacity: 0.4;
     border: 1px solid #FFFFFF;
 }
 
-.social-links{
-    margin-top:35px;
+.social-links {
+    margin-top: 35px;
     margin: 0 auto;
+    margin-bottom:20px;
 }
-.social-link{ 
+
+.social-link {
     display: inline-flex;
     align-items: center;
     vertical-align: center;
     width: 47px;
-    height: 47px;     
+    height: 47px;
     margin-left: 12px;
     margin-top: 42px;
 }
-.inst{
-    background:#FFFFFF url(../img/icons_2.svg) no-repeat 50% 50%; 
+
+.social-link:hover {
+    box-shadow: 0px 3px 5px 0px #FF7931;
 }
-.fb{
-    background:#FFFFFF url(../img/facebook_icon.svg) no-repeat 50% 50%; 
+
+.inst {
+    background: #FFFFFF url(../img/icons_2.svg) no-repeat 50% 50%;
 }
-.twitter{
-    background:#FFFFFF url(../img/twitter_icon.svg) no-repeat 50% 50%; 
+
+.fb {
+    background: #FFFFFF url(../img/facebook_icon.svg) no-repeat 50% 50%;
+}
+
+.twitter {
+    background: #FFFFFF url(../img/twitter_icon.svg) no-repeat 50% 50%;
+}
+
+@media(max-width:1302px){
+    .container{
+        max-width: 900px;
+    }
+    .link{
+        font-size: 14px;
+    }
+    .card1{
+        flex-basis: 49%; 
+     }
+     .promo-title{
+        font-size: 68px;  
+     }
+}
+@media(max-width:950px){
+    .container{
+        max-width: 750px;
+    }
+    .promo-title{
+        font-size: 62px;  
+    }
+}
+@media(max-width:768px){
+    .container{
+        max-width: 750px;
+    }
+    .card1{
+        flex-basis: 85%; 
+     }
+    .nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 16px;
+
+     }
+    .link{
+        font-size: 14px;
+        padding-bottom:10px;
+    }
+    .promo-title{
+        font-size: 50px;
+        margin-block-end: 100px;  
+    }
+    .cards{
+       justify-content: center;
+   }
+    .promo-text{
+      font-size: 12px;
+   }
+    .title{
+       margin-bottom:50px;
+   }
+   .promo-text{
+    margin-block-end: 30px;
+   }
+}
+   @media(max-width:450px){
+    .promo-title{
+        font-size: 45px;
+        margin-block-start: 50px;
+        margin-block-end: 50px;
+    }
+    .promo-img{
+        display: none;
+    }
+    
+}
 }
